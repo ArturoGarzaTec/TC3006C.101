@@ -1,10 +1,10 @@
 # TC3006C.101_Equipo
 
-## Structure of this repository
+## Estructura de este repositorio
 
 La carpeta raíz de este repositorio contiene los siguientes archivos y carpetas:
 
-- **Files**
+- **Archivos**
   - README.md: This file
   - TC3006C_101_Reto.ipynb
   - train.csv
