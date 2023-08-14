@@ -1,16 +1,20 @@
 # TC3006C.101_Equipo
 
-This repository is a demo of what is expected to deliver on each repository requested for the TC3006 course at Tecnológico de Monterrey. For this demo, we consider the implementation portfolio deliverable, which spans across two modules (Statistics and ML) and two subcompetencies (SMA0101A and SMA0401A). Also, we assume that the repository is being provided at the end of first block, which means that the students already got some feedback from the professors.
-
 ## Structure of this repository
 
-The root folder of this repository contains the following files and folders:
+La carpeta raíz de este repositorio contiene los siguientes archivos y carpetas:
 
 - **Files**
   - README.md: This file
+  - TC3006C_101_Reto.ipynb
+  - train.csv
+  - test.csv
 - **Folders**
-  - final: Folder with the information about the final deliverables, which include the changes that the reviewers asked for
-  - retro: Folder with the information about the draft version of each deliverable, which are provided for requesting feedback
+  - Datos: Folder con información de limpia y transformación los datos con ETL.
+  - Solución: Folder with the information about the draft version of each deliverable, which are provided for requesting feedback
+  - Modelo: 
+  - Evaluación:
+  - Refinamiento: 
 
 ## Files for revision
 
