@@ -12,7 +12,6 @@ La carpeta raíz de este repositorio contiene los siguientes archivos y carpetas
 
 - **Archivos**
   - README.md: Este archivo.
-
 - **Carpetas**
   - Final: Carpeta destinada a los entregables finales, incluyen los cambios solicitados por los revisores.
   - Retroalimentación: Carpeta destinada a la versión borrador de cada entregable, favor de incluir retroalimentación.
