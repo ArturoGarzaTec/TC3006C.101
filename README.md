@@ -1,43 +1,38 @@
 # TC3006C.101_Equipo
 
+Este repositorio es propiedad del **Equipo 7**, dedicado a las entregas grupales pertinentes al reto del curso TC3006C. Nuestro equipo esta conformado por:
+
+* **Rodolfo Sandoval Schipper A01720253**
+* **Marcelo Márquez A01720588**
+* **Arturo Garza Campuzano A00828096**
+
 ## Estructura de este repositorio
 
 La carpeta raíz de este repositorio contiene los siguientes archivos y carpetas:
 
 - **Archivos**
-  - README.md: This file
-  - TC3006C_101_Reto.ipynb
-  - train.csv
-  - test.csv
-- **Folders**
-  - Datos: Folder con información de limpia y transformación los datos con ETL.
-  - Solución: Folder with the information about the draft version of each deliverable, which are provided for requesting feedback
-  - Modelo: 
-  - Evaluación:
-  - Refinamiento: 
+  - README.md: Este archivo.
 
-## Files for revision
+- **Carpetas**
+  - Final: Carpeta destinada a los entregables finales, incluyen los cambios solicitados por los revisores.
+  - Retroalimentación: Carpeta destinada a la versión borrador de cada entregable, favor de incluir retroalimentación.
 
-Following is a list of the files that must be checked for grading each subcompetency:
+## Archivos para revisión
 
-- *Module 1: Statistics*
-  - *SMA0101A*
-    - **Evidence 01: Modeling** Please review file **final/M1_Statistics/Ev_01/dummyFile.txt**
-- *Module 2: Machine Learning*
-  - *SMA0401A*
-    - **Evidence 01: ML from scratch** Please review file **final/M2_ML/Ev_01/dummyFile.txt**
-    - **Evidence 02: ML from a framework** Please review file **final/M2_ML/Ev_02/dummyFolder/dummyFile.txt**
+A continuación, se muestra una lista de los archivos que se deben revisar para calificar cada rubro:
 
-## Requested changes and replies
+- *Módulo 3: Desarrollo de Software*
+  - *Datos*
+    - **Evidencia 01: Limpieza del Conjunto de Datos** Favor de revisar el archivo **Retroalimentacion/Datos/Evidencia01/TC3006C_101_Reto.ipynb**
 
-Following is a list of the location of the issues that were raised by the reviewer during the feedback phase. Please refer to them for more details.
+## Cambios solicitados y respuestas
+
+A continuación, se incluye una lista de la ubicación de los problemas que plantearon los revisores durante la fase de comentarios. Por favor refiérase a ellos para más detalles.
 
 - *Module 1: Statistics*
   - *SMA0101A*
-    - **Evidence 01: Modeling: final/M1_Statistics/README.md**
+    - **Evidencia 01: Modeling: N/A**
 - *Module 2: Machine Learning*
   - *SMA0401A*
-    - **Evidence 01: ML from scratch: final/M2_ML/README.md**
-    - **Evidence 02: ML from a framework: final/M2_ML/README.md**
-      
-See you!
+    - **Evidencia 01: ML from scratch: N/A**
+    - **Evidencia 02: ML from a framework: N/A**
