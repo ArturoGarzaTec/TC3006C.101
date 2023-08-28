@@ -23,6 +23,13 @@ A continuación, se muestra una lista de los archivos que se deben revisar para 
 - *Módulo 3: Desarrollo de Software*
   - *Datos*
     - **Evidencia 01: Limpieza del Conjunto de Datos** Favor de revisar el archivo **Retroalimentacion/Datos/Evidencia01/TC3006C_101_Reto.ipynb**
+- *Reto*
+  - *Modelo*
+    - **Evidencia 02: Selección, configuración y entrenamiento del modelo** Favor de revisar los archivos:
+       - **Retroalimentacion/Modelo/Evidencia02/ReporteFinal_Equipo7.pdf**
+       - **Retroalimentacion/Modelo/Evidencia02/RandomForestClassifier/randomForestClassifierTitanic.ipynb**
+       - **Retroalimentacion/Modelo/Evidencia02/RegresionLogisticaMultiple/regresion_logistica_multiple_titanic.ipynb**
+       - **Retroalimentacion/Modelo/Evidencia02/KNN/TC3006C_101_KNN.ipynb**
 
 ## Cambios solicitados y respuestas
 
