@@ -1,23 +1,26 @@
-import {useState, useEffect} from "react"
-import { Breadcrumb, Layout, Menu, theme } from 'antd';
+import React, {useState, useEffect} from "react"
+import { Breadcrumb, Layout, Menu, Typography} from 'antd';
 import { useRouter } from "next/router";
+import styles from '../style/layout.module.css';
 const { Header, Content, Footer } = Layout;
+const {Text} = Typography;
 
 export default function PageLayout () {
     const router = useRouter();
-	const [current, setCurrent] = useState("Random Forest");
+	const [current, setCurrent] = useState("randomforest");
 	
     const menuItems = [
-		{ key: "Docs", texto: "Docs" },
-		{ key: "Random Forest", texto: "Random Forest" },
+		{ key: "randomforest", texto: "Random Forest" },
+		{ key: "docs", texto: "Docs" },
 	];
+
     const onClickMenu = (e) => {
 		setCurrent(e.key);
-		if (e.key == "Docs") router.push("/docs");
+		if (e.key == "docs") router.push("/docs");
 	};
 
 	useEffect(() => {
-		setCurrent("Random Forest");
+		setCurrent("randomforest");
 	}, []);
     
     return (
@@ -28,14 +31,15 @@ export default function PageLayout () {
             top: 0,
             zIndex: 1,
             width: '100%',
-            display: 'flex',
             alignItems: 'center',
+            backgroundColor: 'white',
             }}
-        >
-            <div/>
+        >              
+         <div/>
+         <Text strong className = {styles.title}> EQ7 </Text>
             <Menu
             mode="horizontal"
-            style={{ display: "flex", alignItems: 'center'}}
+            style={{ display: "flex", float: 'right'}}
             selectedKeys={[current]}>
             {menuItems.map((e) => (
                 <Menu.Item
@@ -48,31 +52,19 @@ export default function PageLayout () {
         </Menu>
         </Header>
         <Content
-            className="site-layout"
-            style={{
-            padding: '0 50px',
-            }}
+            className = {styles.content}
+          
         >
             <Breadcrumb
             style={{
-                margin: '16px 0',
+                margin: '16px 50px',
             }}
             >
             <Breadcrumb.Item>{current}</Breadcrumb.Item>
             </Breadcrumb>
-            <div
-            style={{
-                padding: 24,
-                height: 380,
-                backgroundColor: '#F0F0F0',
-            }}
-            >
-            </div>
         </Content>
         <Footer
-            style={{
-            textAlign: 'center',
-            }}
+            className = {styles.footer}
         >
             Equipo 7 ©2023
         </Footer>
