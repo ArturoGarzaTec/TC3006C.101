@@ -6,17 +6,15 @@ const {Text} = Typography;
 export default function docs () {
     return (
         <PageLayout>
-            <Card>
-                <Col>
-                    <Row style = {{margin: '20px'}}>
-                        <Form>
-                            <Form.Item>
-                                
-                            </Form.Item>
-                        </Form>
-                    </Row>
+            <Row justify="center" align="stretch" style={{ minHeight: "75vh" }}>
+                <Col span={24} style={{ maxWidth: "45%", display: "flex", flexDirection: "column" }}>
+                        <Col>
+                            <Row style={{ margin: "20px" }}>
+                                Aqui va la documentacion
+                            </Row>
+                        </Col>
                 </Col>
-            </Card>
+            </Row>
         </PageLayout>
     )
 }

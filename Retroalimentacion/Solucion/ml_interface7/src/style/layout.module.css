@@ -27,12 +27,9 @@
 
   }
 
-  .title{
-    color: #55565A;
-    font-family: 'Inter';
-    src: url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap');
-    text-Align: left;
-    font-Weight: 500;
-    vertical-align: middle;
-  }
+  .title {
+    font-family: 'Arial', sans-serif; /* Use Arial font */
+    font-size: 24px; /* Set the desired font size */
+    text-align: left;
+}
 
