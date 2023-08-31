@@ -26,6 +26,7 @@ export default function PageLayout ({children}) {
             setCurrent("Random Forest");
         }
     };
+
     useEffect(() => {
     Router.events.on('routeChangeStart', handleRouteChangeStart);
     Router.events.on('routeChangeComplete', handleRouteChangeComplete);

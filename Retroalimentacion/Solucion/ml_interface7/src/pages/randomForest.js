@@ -2,6 +2,9 @@ import React, {useState, useEffect} from "react"
 import { Col, Row, Form, Card, Typography, Input, Select, Button, Divider} from "antd"
 import PageLayout from "/src/components/layout"
 import styles from '../style/layout.module.css'
+import {
+    FileExcelOutlined,
+} from "@ant-design/icons";
 
 const {Text} = Typography;
 
@@ -96,6 +99,11 @@ export default function randomForest () {
                                     <Form.Item>
                                         <Button type="primary" htmlType="submit" style={{ width: '100px', borderRadius: '6px' }}>
                                             Run
+                                        </Button>
+                                    </Form.Item>
+                                    <Form.Item>
+                                        <Button type="primary" htmlType="upload" style={{width: '20px', borderRadius: '6px', backgroundColor: "#008000", marginLeft: '22rem' }}>
+                                            <FileExcelOutlined style = {{color: "white"}}></FileExcelOutlined>
                                         </Button>
                                     </Form.Item>
                             </Row>
