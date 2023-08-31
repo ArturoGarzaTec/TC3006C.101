@@ -9,8 +9,10 @@ export default function docs () {
             <Row justify="center" align="stretch" style={{ minHeight: "75vh" }}>
                 <Col span={24} style={{ maxWidth: "45%", display: "flex", flexDirection: "column" }}>
                         <Col>
-                            <Row style={{ margin: "20px" }}>
-                                Aqui va la documentacion
+                            <Row justify = "center" style={{ margin: "20px" }}>
+                                <Text>
+                                    PDF de la Documentacion     
+                                </Text>
                             </Row>
                         </Col>
                 </Col>

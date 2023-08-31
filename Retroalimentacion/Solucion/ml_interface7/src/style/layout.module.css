@@ -33,3 +33,6 @@
     text-align: left;
 }
 
+  .cards {
+  box-shadow: 1px 1px lightgray;
+}

@@ -46,10 +46,6 @@ export default function PageLayout ({children}) {
         if (e.key === "Docs") router.push("/docs");
         else if (e.key === "Random Forest") router.push("/randomForest");
     };
-
-	useEffect(() => {
-		setCurrent("Random Forest");
-	}, []);
     
     return (
     <Layout>
