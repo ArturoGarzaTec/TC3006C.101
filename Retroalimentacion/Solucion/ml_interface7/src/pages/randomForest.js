@@ -62,6 +62,15 @@ export default function randomForest () {
 												value: 3,
 												label: <span>3</span>,
 											},
+                                            {
+												value: 4,
+												label: <span>4</span>,
+											},
+                                            {
+												value: 5,
+												label: <span>5</span>,
+											},
+                                            
                                     ]}
                                 />
                             </Form.Item>
@@ -102,7 +111,8 @@ export default function randomForest () {
                                         </Button>
                                     </Form.Item>
                                     <Form.Item>
-                                        <Button type="primary" htmlType="upload" style={{width: '20px', borderRadius: '6px', backgroundColor: "#008000", marginLeft: '22rem' }}>
+                                        <Button type="default" style={{backgroundColor: "#008000", marginLeft: "7rem" }}>
+                                            <Text style={{ color: "white" }}> Import </Text>
                                             <FileExcelOutlined style = {{color: "white"}}></FileExcelOutlined>
                                         </Button>
                                     </Form.Item>
@@ -113,21 +123,21 @@ export default function randomForest () {
                             <Text> Results </Text>
                         </Row>
                         <Row justify="center">
-                            <Col style={{ textAlign: 'left', alignItems: 'center' }}>
-                                <Text strong style={{ fontSize: '18px' }}>Survived</Text>
-                                
+                            <Col span = {12} >
+                                <Row justify= "center">
+                                    <Text strong style={{ textAlign: 'center', fontSize: '18px' }}>Survived</Text>
+                                </Row>
+                                <Row justify = "center">
+                                    <Text strong style={{ fontSize: '30px' }}>1</Text>
+                                </Row>
                             </Col>
-                            <Col span={12} style={{ textAlign: 'right', alignItems: 'center' }}>
-                                <Text strong style={{ fontSize: '18px' }}>Accuracy</Text>
-                            </Col>
-                        </Row>
-                        <Row justify="center">
-                            <Col style={{ textAlign: 'left', alignItems: 'center' }}>
-                                <Text strong style={{ fontSize: '30px' }}>1</Text>
-                                
-                            </Col>
-                            <Col span={12} style={{ textAlign: 'right', alignItems: 'center' }}>
-                                <Text strong style={{ fontSize: '30px' }}>0.87</Text>
+                            <Col span={12} >
+                                <Row justify = 'center'>
+                                    <Text strong style={{ textAlign: "center", fontSize: '18px' }}>Accuracy</Text>
+                                </Row>
+                                <Row justify = "center">
+                                    <Text strong style={{ fontSize: '30px' }}>0.87</Text>
+                                </Row>
                             </Col>
                         </Row>
                     </Card>
