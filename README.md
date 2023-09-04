@@ -33,7 +33,7 @@ A continuación, se muestra una lista de los archivos que se deben revisar para 
   - *Evaluación y Refinamiento*
     - **Evidencia 03: Evaluación y Refinamiento de modelo** Favor de revisar los archivos:
        - **Retroalimentacion/Evaluacion_Refinamiento/Reporte_EvaluacionRefinamiento.pdf**
-       - **Retroalimentacion/Evaluacion_Refinamiento/RandomForestClassifier/EvaluacionRefinamiento_Modelo.ipynb**
+       - **Retroalimentacion/Evaluacion_Refinamiento/EvaluacionRefinamiento_Modelo.ipynb**
 
 ## Cambios solicitados y respuestas
 
