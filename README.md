@@ -32,8 +32,8 @@ A continuación, se muestra una lista de los archivos que se deben revisar para 
        - **Retroalimentacion/Modelo/Evidencia02/KNN/TC3006C_101_KNN.ipynb**
   - *Evaluación y Refinamiento*
     - **Evidencia 03: Evaluación y Refinamiento de modelo** Favor de revisar los archivos:
-       - **Retroalimentacion/Evaluacion/Evidencia03/Reporte_EvaluacionRefinamiento.pdf**
-       - **Retroalimentacion/Evaluacion/Evidencia03/RandomForestClassifier/EvaluacionRefinamiento_Modelo.ipynb**
+       - **Retroalimentacion/Evaluacion_Refinamiento/Reporte_EvaluacionRefinamiento.pdf**
+       - **Retroalimentacion/Evaluacion_Refinamiento/RandomForestClassifier/EvaluacionRefinamiento_Modelo.ipynb**
 
 ## Cambios solicitados y respuestas
 
