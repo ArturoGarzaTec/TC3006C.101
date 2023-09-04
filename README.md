@@ -30,6 +30,10 @@ A continuación, se muestra una lista de los archivos que se deben revisar para 
        - **Retroalimentacion/Modelo/Evidencia02/RandomForestClassifier/randomForestClassifierTitanic.ipynb**
        - **Retroalimentacion/Modelo/Evidencia02/RegresionLogisticaMultiple/regresion_logistica_multiple_titanic.ipynb**
        - **Retroalimentacion/Modelo/Evidencia02/KNN/TC3006C_101_KNN.ipynb**
+  - *Modelo*
+    - **Evidencia 03: Evaluación y Refinamiento de modelo** Favor de revisar los archivos:
+       - **Retroalimentacion/Evaluacion/Evidencia03/Reporte_EvaluacionRefinamiento.pdf**
+       - **Retroalimentacion/Evaluacion/Evidencia03/RandomForestClassifier/EvaluacionRefinamiento_Modelo.ipynb**
 
 ## Cambios solicitados y respuestas
 
