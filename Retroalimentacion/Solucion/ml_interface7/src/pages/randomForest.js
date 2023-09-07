@@ -53,14 +53,15 @@ export default function randomForest() {
 
 
     const onFinish = (values) => {
-        const formData = {
+        const formData = [{
+            PassengerId: 0,
             Pclass: parseInt(values.pclass, 10),
             Age: parseInt(values.age, 10),
             Sex: parseInt(values.sex, 10),
             Fam: parseInt(values.fam, 10),
             Fare: parseInt(values.fare, 10),
             Embarked: parseInt(values.embarked, 10),
-        };
+        }];
 
         const formDataJson = JSON.stringify(formData);
         console.log('JSON:', formDataJson);
