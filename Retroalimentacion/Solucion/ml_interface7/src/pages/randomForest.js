@@ -9,29 +9,45 @@ import APIMethods from "/src/hooks/APIMethods"
 const { Text } = Typography;
 
 export default function randomForest() {
-    const [jsonData, setJsonData] = useState([]);
+    const [formDataJson, setFormDataJson] = useState([]); 
+    const [jsonDataForm, setJsonDataForm] = useState([]);
     const fileInputRef = useRef(null);
     const router = useRouter();
 
     const handleFileInputChange = (e) => {
         const file = e.target.files[0];
-
+    
         if (!file) {
             return;
         }
-
+    
         const reader = new FileReader();
-
+    
         reader.onload = function (e) {
             const csvText = e.target.result;
             const dataArray = parseCsvToArray(csvText);
-            setJsonData(dataArray);
-            console.log(dataArray)
-        };
+    
+            if (dataArray.length > 0) {
+                const jsonDataArray = dataArray.map((row, index) => ({
+                    PassengerId: index + 1,
+                    Pclass: parseInt(row.Pclass, 10),
+                    Age: parseInt(row.Age, 10),
+                    Sex: parseInt(row.Sex, 10),
+                    Fam: parseInt(row.Fam, 10),
+                    Fare: parseInt(row.Fare, 10),
+                    Embarked: parseInt(row.Embarked, 10),
+                }));
 
+                const firstTenRows = jsonDataArray.slice(0, 10);
+    
+                const jsonDataForm = JSON.stringify(firstTenRows);
+                setJsonDataForm(jsonDataForm);
+                console.log(jsonDataForm);
+            }
+        };
+    
         reader.readAsText(file);
-        
-    };
+    }
 
     const parseCsvToArray = (csvText) => {
         const lines = csvText.split('\n');
@@ -65,6 +81,7 @@ export default function randomForest() {
         }];
 
         const formDataJson = JSON.stringify(formData);
+        setFormDataJson(formDataJson);
         console.log('JSON:', formDataJson);
     };
 
