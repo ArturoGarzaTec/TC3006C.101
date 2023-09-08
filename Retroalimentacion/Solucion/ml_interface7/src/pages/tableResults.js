@@ -1,10 +1,12 @@
+import React, {useState} from "react"
 import { Col, Row, Table, Typography } from "antd";
 import PageLayout from "/src/components/layout";
 
 const { Text } = Typography;
 const { Column } = Table;
 
-export default function tabelResults() {
+export default function tableResults() {
+    //console.log(jsonDataForm)
     return (
         <PageLayout>
                 <Row
@@ -25,7 +27,7 @@ export default function tabelResults() {
                             pagination={true}
                             expandable={true}
                             rowKey="PassengerId"
-                            //dataSource={filteredData ? filteredData.map((el, i) => ({ key: i, ...el })) : []}
+                            //dataSource={jsonDataForm ? jsonDataForm.map((el, i) => ({ key: i, ...el })) : []}
                             scroll={{
                                 x: 1000,
                                 y: 800,

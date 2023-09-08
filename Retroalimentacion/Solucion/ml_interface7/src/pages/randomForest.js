@@ -9,12 +9,12 @@ import APIMethods from "/src/hooks/APIMethods"
 const { Text } = Typography;
 
 export default function randomForest() {
-    const [formDataJson, setFormDataJson] = useState([]); 
-    const [jsonDataForm, setJsonDataForm] = useState([]);
+    const [formDataJson, setFormDataJson] = useState(); 
+    const [jsonDataForm, setJsonDataForm] = useState();
     const fileInputRef = useRef(null);
     const router = useRouter();
 
-    const handleFileInputChange = (e) => {
+    const handleFileInputChange =(e) =>{
         const file = e.target.files[0];
     
         if (!file) {
@@ -23,7 +23,7 @@ export default function randomForest() {
     
         const reader = new FileReader();
     
-        reader.onload = function (e) {
+        reader.onload = async function (e) {
             const csvText = e.target.result;
             const dataArray = parseCsvToArray(csvText);
     
@@ -41,8 +41,10 @@ export default function randomForest() {
                 const firstTenRows = jsonDataArray.slice(0, 10);
     
                 const jsonDataForm = JSON.stringify(firstTenRows);
-                setJsonDataForm(jsonDataForm);
                 console.log(jsonDataForm);
+                let data = await APIMethods.postPassenger(jsonDataForm);
+                console.log(data)
+                setJsonDataForm(data);
             }
         };
     
@@ -83,13 +85,9 @@ export default function randomForest() {
         const formDataJson = JSON.stringify(formData);
         console.log('JSON:', formDataJson);
 
-        let {data} = await APIMethods.postPassenger(formDataJson)
-        console.log(data)
-        if(data){
-            setFormDataJson(data)
-        }else{
-            console.log("There was an error sending form data")
-        }
+        let data = await APIMethods.postPassenger(formDataJson)
+        setFormDataJson(data[0].Prediction)
+        
     };
 
     return (
@@ -211,7 +209,7 @@ export default function randomForest() {
                                     <Text strong style={{ textAlign: 'center', fontSize: '18px' }}>Survived</Text>
                                 </Row>
                                 <Row justify="center">
-                                    <Text strong style={{ fontSize: '30px' }}>1</Text>
+                                    <Text strong style={{ fontSize: '30px' }}>{formDataJson}</Text>
                                 </Row>
                             </Col>
                             <Col span={12}>
