@@ -5,9 +5,9 @@
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-const char* ssid = "INFINITUM1DC6_2.4";
-const char* password = "Mp83485845";
-const char* fastAPIEndpoint = "http://192.168.1.79:8001/fastapi-passengers";
+const char* ssid = "MMM iPhone";
+const char* password = "mayonesa";
+const char* fastAPIEndpoint = "http://172.20.10.3:8001/fastapi-passengers";
 
 HTTPClient client;
 AsyncWebServer server(8002);
@@ -29,23 +29,9 @@ void setup() {
   Serial.print("Connected to WiFi network with IP Address: ");
   Serial.println(WiFi.localIP());
 
-  // DeserializationError err = deserializeJson(doc, json);
-  // if (err) {
-  //   Serial.print("Error: ");
-  //   Serial.println(err.c_str());
-  //   return;
-  // }
-  // deserializeJson(doc, json);
-
-  // Serial.print("Age: ");
-  // int test = doc[0]["Age"];
-  // Serial.println(test);
-
   server.on("/esp32-passengers", HTTP_POST, [](AsyncWebServerRequest *request){}, NULL, [](AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t index, size_t total) {
   // Create a DynamicJsonDocument to hold the data
   DynamicJsonDocument doc(2048);
-  
-  // Deserialize the JSON data
   if (deserializeJson(doc, (const char*)data) != DeserializationError::Ok) {
     request->send(400, "text/plain", "Invalid JSON");
     return;
@@ -54,27 +40,33 @@ void setup() {
   // Serialize the JSON object to a string
   String output;
   serializeJson(doc, output);
-  Serial.println(output);  // Print the serialized JSON payload
+  Serial.println(output);
 
-  // Initialize the HTTPClient and set the headers
   HTTPClient client;
-  client.begin("http://192.168.1.79:8001/fastapi-passengers");
+  client.begin(fastAPIEndpoint);
   client.addHeader("Content-Type", "application/json");
 
-  // Send the POST request and get the response
   int httpResponseCode = client.POST(output);
-  Serial.println(httpResponseCode);  // Print the HTTP response code
+  Serial.println(httpResponseCode);
 
-  // Get the response payload
   String responsePayload = client.getString();
-  Serial.println(responsePayload);  // Print the entire response
+  Serial.println(responsePayload);
 
-  // Send the response payload back to the client
-  request->send(200, "application/json", responsePayload);
 
-  // End the HTTPClient
+  AsyncWebServerResponse *response = request->beginResponse(200, "application/json", responsePayload);
+  response->addHeader("Access-Control-Allow-Origin", "*");
+  request->send(response);
+
   client.end();
 });
+
+  server.on("/esp32-passengers", HTTP_OPTIONS, [](AsyncWebServerRequest *request){
+    AsyncWebServerResponse *response = request->beginResponse(200);
+    response->addHeader("Access-Control-Allow-Origin", "*");
+    response->addHeader("Access-Control-Allow-Methods", "POST");
+    response->addHeader("Access-Control-Allow-Headers", "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+    request->send(response);
+  });
 
 
   server.begin();
