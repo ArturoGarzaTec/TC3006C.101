@@ -69,7 +69,7 @@ export default function randomForest() {
     };
 
 
-    const onFinish = (values) => {
+    async function onFinish(values){
         const formData = [{
             PassengerId: 0,
             Pclass: parseInt(values.pclass, 10),
@@ -81,8 +81,15 @@ export default function randomForest() {
         }];
 
         const formDataJson = JSON.stringify(formData);
-        setFormDataJson(formDataJson);
         console.log('JSON:', formDataJson);
+
+        let {data} = await APIMethods.postPassenger(formDataJson)
+        console.log(data)
+        if(data){
+            setFormDataJson(data)
+        }else{
+            console.log("There was an error sending form data")
+        }
     };
 
     return (

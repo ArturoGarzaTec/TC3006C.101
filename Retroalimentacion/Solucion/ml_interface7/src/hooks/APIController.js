@@ -1,6 +1,6 @@
 export default class API {
-    static port = 8001;
-    static host = "localhost";
+    static port = 8002;
+    static host = "172.20.10.7";
 
     static URL(path) {
         return `http://${this.host}:${this.port}/${path}`;
@@ -14,7 +14,7 @@ export default class API {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(body),
+            body: body,
         });
 
         if (!response.ok) {
