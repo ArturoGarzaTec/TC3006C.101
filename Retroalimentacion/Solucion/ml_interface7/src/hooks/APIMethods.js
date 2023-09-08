@@ -1,7 +1,7 @@
 import API from "/src/hooks/APIController";
 
 export default class APIMethods {
-    static postPassenger(passenger) {
+    static async postPassenger(passenger) {
         let body = {};
         for (let key in passenger) {
             body[key] = passenger[key];
@@ -9,7 +9,7 @@ export default class APIMethods {
         let form = body;
         console.log("form: " + form);
 
-        const response = API.POST(`esp32-passengers`, form);
+        const response = await API.POST(`esp32-passengers`, form);
         console.log(response);
         return response;
     }

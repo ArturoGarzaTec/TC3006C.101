@@ -15,7 +15,8 @@ export default class API {
                 'Content-Type': 'application/json',
             },
             body: body,
-        });
+        })
+        //.then(response => response.json()).then(data => console.log(data))
 
         if (!response.ok) {
             throw new Error(`POST request to ${url} failed with status ${response.status}`);
