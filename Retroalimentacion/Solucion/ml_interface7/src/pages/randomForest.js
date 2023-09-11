@@ -5,6 +5,7 @@ import styles from '../style/layout.module.css';
 import { FileExcelOutlined } from "@ant-design/icons";
 import Router, { useRouter } from "next/router";
 import APIMethods from "/src/hooks/APIMethods"
+import TableResults from "/src/pages/TableResults"
 
 const { Text } = Typography;
 
@@ -40,9 +41,9 @@ export default function randomForest() {
 
                 const firstTenRows = jsonDataArray.slice(0, 10);
     
-                const jsonDataForm = JSON.stringify(firstTenRows);
-                console.log(jsonDataForm);
-                let data = await APIMethods.postPassenger(jsonDataForm);
+                const jsonDataFormString = JSON.stringify(firstTenRows);
+                console.log(jsonDataFormString);
+                let data = await APIMethods.postPassenger(jsonDataFormString);
                 console.log(data)
                 setJsonDataForm(data);
             }
@@ -92,6 +93,7 @@ export default function randomForest() {
 
     return (
         <PageLayout>
+            
             <Row justify="center" align="stretch" style={{ minHeight: "75vh" }}>
                 <Col span={24} style={{ maxWidth: "45%", display: "flex", flexDirection: "column" }}>
                     <Card className={styles.cards} style={{ width: "100%", height: "90%", padding: "20px" }}>
@@ -204,25 +206,20 @@ export default function randomForest() {
                             <Text> Results </Text>
                         </Row>
                         <Row justify="center">
-                            <Col span={12}>
-                                <Row justify="center">
+                            <Col>
+                                <Row margin="10px 0 10px 0" justify="center">
                                     <Text strong style={{ textAlign: 'center', fontSize: '18px' }}>Survived</Text>
                                 </Row>
                                 <Row justify="center">
                                     <Text strong style={{ fontSize: '30px' }}>{formDataJson}</Text>
                                 </Row>
                             </Col>
-                            <Col span={12}>
-                                <Row justify="center">
-                                    <Text strong style={{ textAlign: "center", fontSize: '18px' }}>Table</Text>
-                                </Row>
-                                <Row justify="center">
-                                    <Button type="default" style={{ margin: '10px' }} onClick={() => router.push("tableResults")}>File</Button>
-                                </Row>
-                            </Col>
                         </Row>
                     </Card>
                 </Col>
+                <Row>
+                <TableResults jsonDataForm={jsonDataForm} />
+                </Row>
             </Row>
         </PageLayout>
     );
