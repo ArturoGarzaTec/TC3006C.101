@@ -34,8 +34,8 @@ A continuación, se muestra una lista de los archivos que se deben revisar para 
     - **Evidencia 03: Evaluación y Refinamiento de modelo** Favor de revisar los archivos:
        - **Retroalimentacion/Evaluacion_Refinamiento/Reporte_EvaluacionRefinamiento.pdf**
        - **Retroalimentacion/Evaluacion_Refinamiento/EvaluacionRefinamiento_Modelo.ipynb**
-  - *Solucion*
-    - **Evidencia 04**: Implementacion de la interfaz con un microcontrolador utilizando el modelo de Random Forest Classifier. Favor de revisar los archivos:
+  - *Solución*
+    - **Evidencia 04: Reto Solución (interfaz)** Favor de revisar los archivos:
       - **Retroalimentacion/Solucion/ml_interface7**, carpeta de la interfaz implementada en NEXT.JS.
       - **Retroalimentacion/Solucion/local_api**, archivo que recibe la promesa del front-end y manda los datos.
       - **Retroalimentacion/Solucion/random_forest_model.pkl**, modelo de random forest classifier ya entrenado. 
