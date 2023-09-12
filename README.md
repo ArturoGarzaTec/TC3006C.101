@@ -10,6 +10,18 @@ Este repositorio es propiedad del **Equipo 7**, dedicado a las entregas grupales
 
 La carpeta raíz de este repositorio contiene los siguientes archivos y carpetas:
 
+Se utiliza el modelo de **random forest classifier**. 
+
+**Data set utilizado**: [Titanic](https://www.kaggle.com/competitions/titanic/data?select=test.csv)
+
+Descripcion de los datos:
+
+Registros: 891
+
+Numero de Caracteristicas: 6 --> Pclass, Age, Sex, Title, Fare, Embarked, isAlone
+
+Clases: 1 (Sobrevivio), 0 (No sobrevivio)
+
 - **Archivos**
   - README.md: Este archivo.
 - **Carpetas**
