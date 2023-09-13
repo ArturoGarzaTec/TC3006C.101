@@ -49,10 +49,11 @@ A continuación, se muestra una lista de los archivos que se deben revisar para 
 
 A continuación, se incluye una lista de la ubicación de los problemas que plantearon los revisores durante la fase de comentarios. Por favor refiérase a ellos para más detalles.
 
-- *Module 1: Statistics*
-  - *SMA0101A*
-    - **Evidencia 01: Modeling: N/A**
-- *Module 2: Machine Learning*
-  - *SMA0401A*
-    - **Evidencia 01: ML from scratch: N/A**
-    - **Evidencia 02: ML from a framework: N/A**
+- *Módulo 3: Desarrollo de Software*
+  - *Datos*
+    - **Evidencia 01: Limpieza del Conjunto de Datos**  Favor de revisar el archivo **Final/Solucion/ETL_CambiosSolicitados.pdf** Cambios disponibles en evidencia final.
+- *Reto*
+  - *Modelo*
+    - **Evidencia 02: Selección, configuración y entrenamiento del modelo** Favor de revisar el archivo **Final/Solucion/SeleccionModelo_CambiosSolicitados.pdf** Cambios disponibles en evidencia final.
+  - *Evaluación y Refinamiento*
+    - **Evidencia 03: Evaluación y Refinamiento de modelo** Favor de revisar el archivo **Final/Solucion/EvaluacionRefiniamiento_CambiosSolicitados.pdf** Cambios disponibles en evidencia final.
