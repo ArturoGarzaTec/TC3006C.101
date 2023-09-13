@@ -30,6 +30,10 @@ A continuación, se muestra una lista de los archivos que se deben revisar para 
   - *Evaluación y Refinamiento*
     - **Evidencia 03: Evaluación y Refinamiento de modelo** Favor de revisar el archivo:
        - **Final/Evaluacion_Refinamiento/Evidencia03/EvaluacionRefinamiento_Modelo.ipynb**
+         - Descripción del modelo implementado: modelo random forest classifier, utilizado para problemas de clasificación y de regresión. Es un modelo que involucra el conjunto de varios árboles de decisión para aumentar la precisión y los resultados del modelo.
+          - Descripción del dataset utilizado:
+            - Nombre: Titanic - Machine Learning from Disaster
+            - URL: https://www.kaggle.com/competitions/titanic/data
   - *Solución*
     - **Evidencia 04: Reto Solución (interfaz)** Favor de revisar los archivos:
       - **Retroalimentacion/Solucion/Interfaz**, carpeta de la interfaz implementada en NEXT.JS. 
