@@ -37,8 +37,9 @@ A continuación, se muestra una lista de los archivos que se deben revisar para 
   - *Solución*
     - **Evidencia 04: Reto Solución (interfaz)** Favor de revisar los archivos:
       - **Retroalimentacion/Solucion/Interfaz**, carpeta de la interfaz implementada en NEXT.JS. 
-      - **Retroalimentacion/Solucion**
-
+      - **Retroalimentacion/Solucion/ReporteFinal_Equipo7.ipynb**, reporte final del reto, incluye las tres evidencias anteriores integradas en un mismo documento.
+    - **Evidencia 05: Evidencia 3. Reto Solución (Grupal)**
+      - **Final/Solucion/ReporteFinal_Equipo7.ipynb**, reporte final del reto, incluye las tres evidencias anteriores integradas en un mismo documento.
 
 ## Cambios solicitados y respuestas
 
