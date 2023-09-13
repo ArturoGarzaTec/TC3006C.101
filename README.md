@@ -40,6 +40,10 @@ A continuación, se muestra una lista de los archivos que se deben revisar para 
       - **Retroalimentacion/Solucion/ReporteFinal_Equipo7.ipynb**, reporte final del reto, incluye las tres evidencias anteriores integradas en un mismo documento.
     - **Evidencia 05: Evidencia 3. Reto Solución (Grupal)**
       - **Final/Solucion/ReporteFinal_Equipo7.ipynb**, reporte final del reto, incluye las tres evidencias anteriores integradas en un mismo documento.
+          - Descripción del modelo implementado: modelo random forest classifier, utilizado para problemas de clasificación y de regresión. Es un modelo que involucra el conjunto de varios árboles de decisión para aumentar la precisión y los resultados del modelo.
+          - Descripción del dataset utilizado:
+            - Nombre: Titanic - Machine Learning from Disaster
+            - URL: https://www.kaggle.com/competitions/titanic/data
 
 ## Cambios solicitados y respuestas
 
