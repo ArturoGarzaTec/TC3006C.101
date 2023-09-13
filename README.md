@@ -22,24 +22,19 @@ A continuación, se muestra una lista de los archivos que se deben revisar para 
 
 - *Módulo 3: Desarrollo de Software*
   - *Datos*
-    - **Evidencia 01: Limpieza del Conjunto de Datos** Favor de revisar el archivo **Retroalimentacion/Datos/Evidencia01/TC3006C_101_Reto.ipynb**
+    - **Evidencia 01: Limpieza del Conjunto de Datos** Favor de revisar el archivo **Final/Datos/Evidencia01/TC3006C_101_Reto.ipynb**
 - *Reto*
   - *Modelo*
-    - **Evidencia 02: Selección, configuración y entrenamiento del modelo** Favor de revisar los archivos:
-       - **Retroalimentacion/Modelo/Evidencia02/ReporteFinal_Equipo7.pdf**
-       - **Retroalimentacion/Modelo/Evidencia02/RandomForestClassifier/randomForestClassifierTitanic.ipynb**
-       - **Retroalimentacion/Modelo/Evidencia02/RegresionLogisticaMultiple/regresion_logistica_multiple_titanic.ipynb**
-       - **Retroalimentacion/Modelo/Evidencia02/KNN/TC3006C_101_KNN.ipynb**
+    - **Evidencia 02: Selección, configuración y entrenamiento del modelo** Favor de revisar el archivo:
+       - **Final/Modelo/Evidencia02/SeleccionModelo.ipynb**
   - *Evaluación y Refinamiento*
-    - **Evidencia 03: Evaluación y Refinamiento de modelo** Favor de revisar los archivos:
-       - **Retroalimentacion/Evaluacion_Refinamiento/Reporte_EvaluacionRefinamiento.pdf**
-       - **Retroalimentacion/Evaluacion_Refinamiento/EvaluacionRefinamiento_Modelo.ipynb**
+    - **Evidencia 03: Evaluación y Refinamiento de modelo** Favor de revisar el archivo:
+       - **Final/Evaluacion_Refinamiento/Evidencia03/EvaluacionRefinamiento_Modelo.ipynb**
   - *Solución*
     - **Evidencia 04: Reto Solución (interfaz)** Favor de revisar los archivos:
       - **Retroalimentacion/Solucion/Interfaz**, carpeta de la interfaz implementada en NEXT.JS. 
-      - **Retroalimentacion/Solucion/ReporteFinal_Equipo7.ipynb**, reporte final del reto, incluye las tres evidencias anteriores integradas en un mismo documento.
     - **Evidencia 05: Evidencia 3. Reto Solución (Grupal)**
-      - **Final/Solucion/ReporteFinal_Equipo7.ipynb**, reporte final del reto, incluye las tres evidencias anteriores integradas en un mismo documento.
+      - **Final/Solucion/Evidencia05/ReporteFinal_Equipo7.ipynb**, reporte final del reto, incluye las tres evidencias anteriores integradas en un mismo documento.
           - Descripción del modelo implementado: modelo random forest classifier, utilizado para problemas de clasificación y de regresión. Es un modelo que involucra el conjunto de varios árboles de decisión para aumentar la precisión y los resultados del modelo.
           - Descripción del dataset utilizado:
             - Nombre: Titanic - Machine Learning from Disaster
@@ -51,9 +46,9 @@ A continuación, se incluye una lista de la ubicación de los problemas que plan
 
 - *Módulo 3: Desarrollo de Software*
   - *Datos*
-    - **Evidencia 01: Limpieza del Conjunto de Datos**  Favor de revisar el archivo **Final/Solucion/ETL_CambiosSolicitados.pdf** Cambios disponibles en evidencia final.
+    - **Evidencia 01: Limpieza del Conjunto de Datos**  Favor de revisar el archivo **Final/Datos/Evidencia01/ETL_CambiosSolicitados.pdf** Cambios disponibles en evidencia final.
 - *Reto*
   - *Modelo*
-    - **Evidencia 02: Selección, configuración y entrenamiento del modelo** Favor de revisar el archivo **Final/Solucion/SeleccionModelo_CambiosSolicitados.pdf** Cambios disponibles en evidencia final.
+    - **Evidencia 02: Selección, configuración y entrenamiento del modelo** Favor de revisar el archivo **Final/Modelo/Evidencia02/SeleccionModelo_CambiosSolicitados.pdf** Cambios disponibles en evidencia final.
   - *Evaluación y Refinamiento*
-    - **Evidencia 03: Evaluación y Refinamiento de modelo** Favor de revisar el archivo **Final/Solucion/EvaluacionRefiniamiento_CambiosSolicitados.pdf** Cambios disponibles en evidencia final.
+    - **Evidencia 03: Evaluación y Refinamiento de modelo** Favor de revisar el archivo **Final/Evaluacion_Refinamiento/Evidencia03/EvaluacionRefiniamiento_CambiosSolicitados.pdf** Cambios disponibles en evidencia final.
